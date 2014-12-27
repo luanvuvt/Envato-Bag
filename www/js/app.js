@@ -57,15 +57,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-  .state('app.single', {
-    url: "/playlists/:playlistId",
+  .state('app.statement', {
+    url: "/account/:username/statement",
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
+        templateUrl: "templates/statement.html",
+        controller: 'SatementCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/account');
+  $urlRouterProvider.otherwise('/app/account/kulerthemes');
 });
